@@ -10,18 +10,18 @@ class PersonTest {
 
     @BeforeEach
     public void beforeEach(){
-        person = new Person();
+        person = new Person(111L,"Sammy");
     }
 
     @Test
     public void testConstructor(){
         //Given
         String expectedName = "";
-        long expectedId = 18;
+        long expectedId = 181L;
         //When
         person.setName(expectedName);
         String actualName = person.getName();
-        long actualId = 18;
+        long actualId = 181L;
         //Then
         Assert.assertEquals(expectedName, actualName);
         Assert.assertEquals(expectedId, actualId);

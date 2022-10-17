@@ -1,12 +1,12 @@
 public class Person {
-    private final long id = 18;
+    private final long id;
     private String name;
 
     public Person(long id, String name) {
         this.name = name;
+        this.id = id;
     }
-    public Person(){
-    }
+
 
     public long getId() {
         return id;
